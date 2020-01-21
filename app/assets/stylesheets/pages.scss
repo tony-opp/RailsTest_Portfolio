@@ -1,0 +1,306 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/*================================================================================
+* "Murphy" CSS Template
+* March 2019
+*
+* A bare-minimum CSS template.
+* Nav section does not break down on mobile, intended for 
+* about 5 nav options, max
+*
+* $Table of Contents (search for categories using '$' followed by the name)
+* 1. General
+* 2. Color
+* 3. Nav
+* 4. Sizing
+* 5. Additions
+* 6. Layout (keep last for mobile reason)
+*
+================================================================================/
+
+/************************
+* $General
+*************************/
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.test>div {
+	border: 1px dashed;
+}
+
+/************************
+* $Color
+*************************/
+.bg-light {
+	background-color: #f5f5f7;
+}
+
+/************************
+* $Nav
+*************************/
+nav {
+	display: block;
+	width: 100%;
+	font-size: initial;
+}
+
+nav ul {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 14px;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav ul li a {
+	padding: 1rem;
+}
+
+
+/************************
+* $Sizing
+*************************/
+.max-200,
+.max-300,
+.max-400,
+.max-500,
+.max-600,
+.max-700,
+.max-800,
+.max-900,
+.max-1000,
+.max-1100,
+.max-1200,
+.max-1300,
+.max-1400 {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+.max-200 { max-width: 200px; }
+.max-300 { max-width: 300px; }
+.max-400 { max-width: 400px; }
+.max-500 { max-width: 500px; }
+.max-600 { max-width: 600px; }
+.max-700 { max-width: 700px; }
+.max-800 { max-width: 800px; }
+.max-900 { max-width: 900px; }
+.max-1000 { max-width: 1000px; }
+.max-1100 { max-width: 1100px; }
+.max-1200 { max-width: 1200px; }
+.max-1300 { max-width: 1300px; }
+.max-1400 { max-width: 1400px; }
+
+
+/************************
+* $Additions
+*************************/
+
+.jumbotron {
+    /*height: 100vh; for full browser-height jumbotrons */
+    min-height: 200px;
+    background-image: url(http://tonyopp.com/images/background_dark2.png);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+
+.jumbotron h1 {
+    color:  #fff;
+}
+
+
+/************************
+* $Layout
+*************************/
+.container {
+	width: 100%;
+    padding: 0 15px;
+	margin: auto;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.container .row {
+	margin: auto -15px;
+	position: relative;
+	font-size: 0;
+}
+
+html body .container .row .vert-bottom {
+    vertical-align: bottom;
+}
+
+.container .row-offer {
+	display: block;
+}
+
+.container .row .col-20,
+.container .row .col-25 {
+	box-sizing: border-box;
+	width: 50%;
+	display: inline-block;
+	font-size: 0;
+}
+
+.container .row .col-30,
+.container .row .col-33,
+.container .row .col-40,
+.container .row .col-50,
+.container .row .col-60,
+.container .row .col-70,
+.container .row .col-75,
+.container .row .col-100 {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	font-size: 0;
+}
+
+.container .row .content {
+  /*padding: 28px 72px;*/
+  padding: 28px 15px;
+  box-sizing: border-box;
+  position: relative;
+  font-size: initial;
+}
+
+.container .row .font-init {
+  font-size: initial; /* for when you don't want the spacing of the 'content' class, but need a font size */
+}
+
+body .container .row .content-extra-padding {
+	padding: 28px 72px;
+}
+
+/*** Gap ***/
+.container .gap div .content,
+.container .gap-vert div .content,
+.container .gap-flush div .content {
+	/*margin: 15px auto;*/
+    margin: 15px auto 0;
+}
+
+/*** Show on Desktop/Mobile only ***/
+body .container .only_desktop {
+	display: none;
+}
+	
+body .container .only_mobile {
+	display: block;
+}
+
+@media (min-width: 768px) {
+  .container .row .col-0,
+  .container .row .col-20,
+  .container .row .col-25,
+  .container .row .col-30,
+  .container .row .col-33,
+  .container .row .col-40,
+  .container .row .col-50,
+  .container .row .col-60,
+  .container .row .col-70,
+  .container .row .col-75 {
+    display: inline-block;
+    vertical-align: top;
+  }
+	
+	.container .row-offer {
+		display: flex;
+	}
+	
+	.container .row .col-20 { width: 20%; }
+	.container .row .col-25 { width: 25%; }
+	.container .row .col-30 { width: 30%; }
+	.container .row .col-33 { width: 33.33%; }
+	.container .row .col-40 { width: 40%; }
+	.container .row .col-50 { width: 50%; }
+	.container .row .col-60 { width: 60%; }
+	.container .row .col-70 { width: 70%; }
+	.container .row .col-75 { width: 75%; }
+	
+	/*** Gap ***/
+	.container .gap div .content {
+		margin: 15px;
+	}
+    
+    .container .gap-vert div .content {
+		margin: 15px 0 0;
+	}
+
+	.container .gap-flush div .content {
+		margin: 15px 7.5px 15px 7.5px;
+	}
+
+	.container .gap-flush div:first-child .content {
+		margin: 15px 15px 15px 0;
+	}
+
+	.container .gap-flush div:last-child .content {
+		margin: 15px 0 15px 15px;
+	}
+	
+	body .container .only_desktop {
+		display: block;
+	}
+	
+	body .container .only_mobile {
+		display: none;
+	}
+}
